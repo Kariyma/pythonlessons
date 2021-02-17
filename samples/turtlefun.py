@@ -11,14 +11,14 @@ def circle(radius):
         turtle.forward(length_side)
 
 
-def arc(radius, angel, direction='left'):
+def arc(tr, radius=100, angel=180, direction='left'):
     number_side_polygon = 100
     angle = angel / number_side_polygon
     length_side = radius*2*np.sin((angle/2)*(np.pi/180))
     for i in range(number_side_polygon):
         if direction == 'right':
-            turtle.right(angle)
+            tr.right(angle)
         else:
-            turtle.left(angle)
-        turtle.forward(length_side)
+            tr.left(angle)
+        tr.forward(length_side)
 
