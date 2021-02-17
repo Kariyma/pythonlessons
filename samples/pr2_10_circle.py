@@ -2,11 +2,16 @@ import turtle
 import turtlefun as tf
 
 turtle.speed(9)
-turtle.color('blue')
+turtle.color('red')
 turtle.shape('classic')
 
-for i in range(6):
-    tf.circle(100)
-    turtle.right(60)
+
+
+for i in range(12):
+    tf.circle(50)
+    turtle.right(30)
+
+turtle.dot(30, 'yellow')
+turtle.hideturtle()
 
 turtle.done()
