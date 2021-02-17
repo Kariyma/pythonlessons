@@ -3,6 +3,12 @@ import numpy as np
 
 
 def regular_polygons(number_side: int, len_side: float):
+    """
+    Draw polygon with number of side and length side
+    :param number_side:
+    :param len_side:
+    :return:
+    """
     turtle.pendown()
     for j in range(number_side):
         turtle.left(360 / number_side)
