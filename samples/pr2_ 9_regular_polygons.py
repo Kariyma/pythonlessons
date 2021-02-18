@@ -1,19 +1,6 @@
 import turtle
 import numpy as np
-
-
-def regular_polygons(number_side: int, len_side: float):
-    """
-    Draw polygon with number of side and length side
-    :param number_side:
-    :param len_side:
-    :return:
-    """
-    turtle.pendown()
-    for j in range(number_side):
-        turtle.left(360 / number_side)
-        turtle.forward(len_side)
-    turtle.penup()
+import turtlefun as tf
 
 
 def main():
@@ -36,7 +23,7 @@ def main():
         turtle.forward(step_polygonal)
         turtle.left(angle_2)
 
-        regular_polygons(n, length)
+        tf.regular_polygons(n, length)
 
         turtle.right(angle_2)
 
